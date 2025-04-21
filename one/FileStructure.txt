@@ -1,0 +1,33 @@
+my-nextjs-app/
+├── app/                      # App Router (Pages, Layouts, Routes)
+│   ├── layout.tsx            # Root layout (shared UI: header, footer)
+│   ├── page.tsx              # Home page
+│   ├── about/                # About page route
+│   │   └── page.tsx
+│   ├── dashboard/            # Nested route (e.g., for logged-in users)
+│   │   ├── layout.tsx        # Layout for dashboard routes
+│   │   └── page.tsx
+│   └── api/                  # API routes
+│       └── hello/            # Example route
+│           └── route.ts
+│
+├── public/                   # Static files (images, fonts, etc.)
+│   └── logo.png
+│
+├── components/              # Reusable UI components
+│   ├── Navbar.tsx
+│   └── Footer.tsx
+│
+├── lib/                     # Utilities, DB client, helpers
+│   └── db.ts                # (e.g., Prisma, MongoDB client)
+│
+├── styles/                  # Global and modular styles
+│   ├── globals.css
+│   └── home.module.css
+│
+├── middleware.ts            # Middleware for auth, redirects, etc.
+├── next.config.js           # Next.js configuration
+├── tsconfig.json            # TypeScript configuration
+├── package.json             # Dependencies and scripts
+└── .env.local               # Environment variables (not committed)
+ 
