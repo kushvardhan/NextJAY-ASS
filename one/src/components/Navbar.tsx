@@ -1,12 +1,22 @@
 "use client"
 
 import React from 'react'
+import Link from 'next/link';
+
 
 const Navbar = () => {
   return (
-    <div className='w-full h-[10vh] bg-zinc-800 flex justify-center items-center'>
-        <h1 className='text-3xl font-bold text-center text-white'>NextJAY</h1>
-        
+    <div className='w-full h-[13vh] bg-zinc-800 flex justify-between items-center'>
+        <div className='h-full w-[30%] px-3 flex items-center justify-around'>
+        <h1 className=' text-4xl font-bold text-start text-white'>
+            <Link href={"/"}>NextJAY</Link>
+        </h1>
+        </div>
+        <div className='w-[40%] text-lg font-regular flex justify-around items-center'>
+            <Link className='hover:text-blue-300' href={"/"}>Home</Link>
+            <Link className='hover:text-blue-300' href={`/user/ked3949`}>Profile</Link>
+            <Link className='hover:text-blue-300' href={"/login"}>Login</Link>
+        </div>
     </div>
   )
 }
