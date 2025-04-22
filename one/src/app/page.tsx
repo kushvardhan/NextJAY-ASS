@@ -10,28 +10,12 @@ export default function Home() {
   }
 
   return (
-    <div style={{
-      width: '100%',
-      minHeight: 'calc(100vh - 13vh)',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '2rem'
-    }}>
-      <h1 style={{ fontSize: '1.5rem', fontWeight: 600 }}>KUSH VARDHAN</h1>
-      {name && <h2 style={{ fontSize: '1.25rem' }}>{name}</h2>}
-      <form action="" style={{ display: 'flex', flexDirection: 'column' }}>
+    <div className="w-full min-h-[calc(100vh-13vh)] flex flex-col items-center justify-center gap-8">
+      <h1 className="text-2xl font-semibold">KUSH VARDHAN</h1>
+      {name && <h2 className="text-xl">{name}</h2>}
+      <form action="" className="flex flex-col">
         <input
-          style={{
-            width: '28vw',
-            height: '5vh',
-            borderRadius: '0.5rem',
-            backgroundColor: '#27272a',
-            border: 'none',
-            outline: 'none',
-            padding: '8px 16px'
-          }}
+          className="w-[28vw] h-[5vh] rounded-lg bg-zinc-800 border-none outline-none px-4 py-2 text-white"
           value={name}
           onChange={handleName}
           type="text"
