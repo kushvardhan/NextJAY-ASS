@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Custom utility classes */
+@import "./tailwind-utils.css";
 
 :root {
   --background: #ffffff;

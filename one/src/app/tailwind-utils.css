@@ -1,0 +1,56 @@
+/* Custom utility classes similar to Tailwind CSS */
+
+/* Width */
+.w-full { width: 100%; }
+.w-\[28vw\] { width: 28vw; }
+.w-\[30\%\] { width: 30%; }
+.w-\[40\%\] { width: 40%; }
+
+/* Height */
+.h-\[5vh\] { height: 5vh; }
+.h-\[13vh\] { height: 13vh; }
+.h-full { height: 100%; }
+
+/* Min Height */
+.min-h-\[calc\(100vh-13vh\)\] { min-height: calc(100vh - 13vh); }
+
+/* Background */
+.bg-zinc-800 { background-color: #27272a; }
+
+/* Text */
+.text-white { color: white; }
+.text-2xl { font-size: 1.5rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-xl { font-size: 1.25rem; }
+.text-lg { font-size: 1.125rem; }
+
+/* Font */
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* Flex */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.gap-8 { gap: 2rem; }
+
+/* Padding */
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+/* Border */
+.border-none { border: none; }
+.rounded-lg { border-radius: 0.5rem; }
+
+/* Outline */
+.outline-none { outline: none; }
+
+/* Text Alignment */
+.text-start { text-align: start; }
+
+/* Hover */
+.hover\:text-blue-300:hover { color: #93c5fd; }
