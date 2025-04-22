@@ -1,5 +1,5 @@
-/* Custom utility classes */
-@import "./tailwind-utils.css";
+/* Custom styles */
+@import "./custom-styles.css";
 
 :root {
   --background: #ffffff;

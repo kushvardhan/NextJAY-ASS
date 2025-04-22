@@ -10,12 +10,12 @@ export default function Home() {
   }
 
   return (
-    <div className="w-full min-h-[calc(100vh-13vh)] flex flex-col items-center justify-center gap-8">
-      <h1 className="text-2xl font-semibold">KUSH VARDHAN</h1>
-      {name && <h2 className="text-xl">{name}</h2>}
-      <form action="" className="flex flex-col">
+    <div className="custom-container">
+      <h1 className="custom-heading">KUSH VARDHAN</h1>
+      {name && <h2>{name}</h2>}
+      <form action="" className="custom-form">
         <input
-          className="w-[28vw] h-[5vh] rounded-lg bg-zinc-800 border-none outline-none px-4 py-2 text-white"
+          className="custom-input"
           value={name}
           onChange={handleName}
           type="text"
